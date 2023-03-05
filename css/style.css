@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,20 +14,197 @@
     justify-content: space-between;
     align-items: center;
 }
+
 header{
     background-color:#673C3D ;
-    height: 130px;
+    height: 80px;
 }
+
 .menu{
     width: 900px;
     display: flex;
     justify-content: space-between;
 }
+
 .menu a{
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
     font-family: 'Salsa', cursive;
-
 }
+
+.banner{
+    height: 550px;
+    background-image: url(../img/BannerPrincip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-banner{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-align: center;
+   
+}
+
+ .posicao-texto{
+    justify-content: flex-end;
+ }
+
+.texto-banner h1{
+font-family: 'Titillium Web', sans-serif;
+font-size: 70px;
+font-weight: 900;
+}
+
+.texto-banner a{
+    background-color: #c31616;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.texto-banner p{
+    margin-bottom: 50px;
+}
+
+.section-marcas{
+    background-color: #2A2E1D;
+    height: 100px;
+}
+
+.marcas{
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+}
+.marcas img{
+    max-width: 200px;
+    max-height:100px;
+}
+
+.container-imagem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-produtos{
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    .ofertas a{
+     
+    padding: 90px;
+    
+    }
+
+.section-sobre{
+    background-color:#673C3D ;
+}
+
+.texto-sobre{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barras{
+    display: none;
+}
+
+.posicionamento-header{
+position: relative;
+}
+
+footer{
+    background-color:#673C3D ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .links{
+    color: white;
+  }
+  
+  .sociais{
+    color: white;
+  }
+
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+.links-footer h2{
+    font-size: 22px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo-footer{
+    width: 200px;
+    height: 60px; 
+   }
+
+/*Descktop*/
+@media screen and (max-width:1200px) {
+    .container-grid{
+    width: 90%;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 200px;
+    }
+}
+
+#carrossel img{
+    display: none;
+    }
+
+    .banner-ativo{
+        display: flex;
+      }
+
+/*Tablet*/
+@media screen and (max-width:851px){
+.menu{
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 60;
+    background-color:#673C3D ;
+}
+.barras{
+    display: inline-block;
+}
+.menu a{
+    text-align: right;
+    padding: 5px;
+}
+.menu-ativo{
+    display: flex;
+  }
+}
+/* mobile */
